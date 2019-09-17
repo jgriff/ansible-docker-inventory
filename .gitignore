@@ -1,0 +1,17 @@
+# IDE Files
+#############
+*.iml
+.idea
+.project
+.classpath
+.settings/
+.vscode/
+
+# Build
+#########
+inventory
+
+# Misc
+##############
+.DS_Store
+
