@@ -2,6 +2,7 @@ version: "3.7"
 services: 
   node:
     build: .
+    privileged: true
     ports: 
       - "22"
       - "8080"
