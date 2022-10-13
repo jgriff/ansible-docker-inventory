@@ -36,7 +36,7 @@ You can `make up` and `make down` to quickly test your playbooks against clean i
 
 * `Make` - For management of the inventory (`up` and `down`).
 * `docker-compose` - To run the inventory containers.
-* [`sshpass`](https://linux.die.net/man/1/sshpass) - For no prompt `ssh-copy-id` to copy your public key to the hosts.  See [this gist](https://gist.github.com/arunoda/7790979#installing-sshpass) for installation instructions.
+* [`sshpass`](https://linux.die.net/man/1/sshpass) - For no prompt `ssh-copy-id` to copy your public key to the hosts.  See [this gist](https://gist.github.com/arunoda/7790979#installing-sshpass) for installation instructions (if using Homebrew, see [here](https://stackoverflow.com/a/62623099)).
 * No direct Windows support.
 
 

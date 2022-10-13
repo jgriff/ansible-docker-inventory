@@ -66,5 +66,5 @@ clean_inventory:
 # query our docker containers for their exposed local SSH port (mapping to their internal port 22)
 define docker_inventory_ports
 	# get all containers in our inventory                       | grab the container ID              | get the port mappings                | extract the TCP ports                    | filter out any other port mappings (only care about TCP ports)
-	docker container ls --filter 'name=ansible-inventory_node*' --format='{{json .ID}}' |  xargs -I {} docker container port {} | awk '{gsub(/22\/tcp -> 0.0.0.0:/,"");}1' | grep -v -E '.*[-> 0.0.0.0:].*'
+	docker container ls --filter 'name=ansible-inventory-node*' --format='{{json .ID}}' |  xargs -I {} docker container port {} | awk '{gsub(/22\/tcp -> 0.0.0.0:/,"");}1' | grep -v -E '[^0-9]'
 endef
